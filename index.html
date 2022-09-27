@@ -271,25 +271,14 @@ body{
 .img{
   box-shadow: 0px 28px 18px -11px rgba(98, 121, 139, 0.6);
 }
+
 .video{
+  width: 480px;
   height: 860px; 
   position: absolute;
   z-index: 100;
   background-color: #B0C4DE;
-}
-.video{
-  height: 860px; 
-  position: absolute;
-  z-index: 10;
-  background-color: #B0C4DE;
-  left: 8px;
-}
-.video{
-  height: 860px; 
-  position: absolute;
-  z-index: 100;
-  background-color: #B0C4DE;
-  left: 15px;
+  margin-left: -33px;
 }
 .line-text{
   position: absolute;
@@ -306,6 +295,8 @@ body{
 <body>
 
   <div class="block">
+    <video autoplay="autoplay" loop muted="muted" id="video" class="video" src="start1.mp4"></video>
+    
     
     <div class="dia_mother">
       <div class="dia">
@@ -320,7 +311,7 @@ body{
             <div class="div11" disabled=disabled><img disabled=disabled class="img img11" src="dia11.jpg"></div>
 
             <div id="div-21" disabled=disabled class="div21" ><img disabled=disabled class="img img21" id="slide-04" onclick="revers04(), time()" class="dia_photo2" src="dia22.jpg"></div>
-            <div id="div-22" class="div22" disabled=disabled onclick="revers4()"><img disabled=disabled class="img img22" id="slide-4" src="dia21.PNG">
+            <div id="div-22" class="div22" disabled=disabled onclick="revers4()"><img disabled=disabled class="img img22" id="slide-4" src="dia21.png">
               <marquee class="line-text" id="beg" >Документ діє під час воєнного стану. Ой у лузі червона калина похилилася, чогось наша славна Україна зажурилася. А ми тую червону калину підіймемо, а ми нашу славну Україну, гей, гей, розвеселимо!</marquee></div>
 
             <div id="div-01" disabled=disabled class="div01" ><img disabled=disabled class="img img01" id="slide-01" onclick="revers01()" class="dia_photo2" src="dia2.jpg"></div>
@@ -350,6 +341,21 @@ body{
   </div>
 </body>
 <script>
+
+
+  setTimeout(function(){
+    let block = this;
+    let blockId = setInterval(function(){
+     document.getElementById('video1').style.display = 'none';}, 500)}, 7500);
+  setTimeout(function(){
+    let block = this;
+    let blockId = setInterval(function(){
+     document.getElementById('video2').style.display = 'none';}, 500)}, 7500);
+  setTimeout(function(){
+    let block = this;
+    let blockId = setInterval(function(){
+     document.getElementById('video').style.display = 'none';}, 500)}, 7500);
+
 
 
   function zero_first_format(value)
